@@ -1,2 +1,7 @@
 @import './base.css';
 @import 'tailwindcss';
+
+/* ct: custom */
+.ct-small-icon {
+  @apply w-5 h-5;
+}
