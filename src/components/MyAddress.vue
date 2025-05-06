@@ -7,7 +7,7 @@ import IconGitHub from './icons/IconGitHub.vue'
 </script>
 
 <template>
-  <div class="flex flex-col gap-2 bg-gray-800 border-1 border-right p-3 px-8 rounded-sm">
+  <div class="flex flex-col gap-2 bg-gray-800 border-1 border-right p-3 rounded-sm">
     <!--mail-->
     <SectionAddress>
       <template #icon>

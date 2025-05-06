@@ -7,7 +7,7 @@ import MyInformation from './components/MyInformation.vue'
 
 <template>
   <main class="flex justify-center">
-    <div class="w-[80vw] !my-8 p-2 grid grid-cols-[2fr_1fr] grid-rows-[1fr_2fr] gap-4 bg-white">
+    <div class="w-[60vw] !my-8 p-2 grid grid-cols-[2fr_1fr] grid-rows-[auto_2fr] gap-4 bg-white">
       <MySummary />
       <MyAddress />
       <WorkExperience />
