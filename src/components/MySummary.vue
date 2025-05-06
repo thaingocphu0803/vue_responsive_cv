@@ -4,7 +4,7 @@
 </script>
 
 <template>
-  <div class="text-gray-800 bg-gray-300 p-3 rounded-sm flex items-center gap-4">
+  <div class="text-gray-800 bg-gray-200 p-3 rounded-sm flex items-center gap-4">
     <div class="basis-1/4 flex justify-center">
       <img
         src="../assets/logo.svg"

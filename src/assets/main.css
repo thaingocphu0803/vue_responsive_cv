@@ -2,6 +2,10 @@
 @import 'tailwindcss';
 
 /* ct: custom */
-.ct-small-icon {
-  @apply w-5 h-5;
+.ct-icon {
+  @apply w-6 h-6;
+}
+
+.ct-item-icon {
+  @apply w-4 h-4;
 }
