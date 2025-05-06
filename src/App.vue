@@ -3,6 +3,7 @@ import MySummary from './components/MySummary.vue'
 import WorkExperience from './components/WorkExperience.vue'
 import MyAddress from './components/MyAddress.vue'
 import MyInformation from './components/MyInformation.vue'
+import DownloadPDF from './components/DownloadPDF.vue'
 </script>
 
 <template>
@@ -14,4 +15,5 @@ import MyInformation from './components/MyInformation.vue'
       <MyInformation />
     </div>
   </main>
+  <DownloadPDF />
 </template>
