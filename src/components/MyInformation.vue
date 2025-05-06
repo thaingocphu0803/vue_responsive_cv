@@ -8,7 +8,7 @@ import SectionCommonBody from './sections/SectionCommonBody.vue'
 </script>
 
 <template>
-  <div class="flex flex-col justify-center gap-12 bg-gray-200 border-1 border-right p-3 rounded-sm">
+  <div class="flex flex-col justify-center gap-12 bg-gray-200 p-3 rounded-sm">
     <!-- skill -->
     <SectionCommonBlock>
       <template #icon>
