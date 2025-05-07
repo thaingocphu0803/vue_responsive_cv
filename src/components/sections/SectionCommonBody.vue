@@ -6,12 +6,12 @@
     <span class="text-gray-900 text-base font-medium tracking-widest">
       <slot name="title"></slot>
     </span>
-    <span class="text-gray-900 text-sm font-medium tracking-wider">
+    <a href="#" class="text-gray-900 text-sm font-medium tracking-wider">
       <slot name="demo"></slot>
-    </span>
-    <span class="text-gray-900 text-sm font-medium tracking-wider">
+    </a>
+    <a href="#" class="text-gray-900 text-sm font-medium tracking-wider">
       <slot name="github"></slot>
-    </span>
+    </a>
     <span class="text-amber-600 text-sm font-medium italic">
       <slot name="datetime"></slot>
     </span>

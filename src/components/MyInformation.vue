@@ -8,13 +8,13 @@ import SectionCommonBody from './sections/SectionCommonBody.vue'
 </script>
 
 <template>
-  <div class="flex flex-col justify-center gap-12 bg-gray-200 p-3 rounded-sm">
+  <div class="w-full h-full flex flex-col md:gap-12 gap-4 bg-gray-200 p-3 rounded-sm">
     <!-- skill -->
     <SectionCommonBlock>
       <template #icon>
         <IconSkill />
       </template>
-      <template #title>oke oke oek</template>
+      <template #title>Paragraph example 1</template>
       <SectionSkill />
     </SectionCommonBlock>
 
@@ -23,11 +23,11 @@ import SectionCommonBody from './sections/SectionCommonBody.vue'
       <template #icon>
         <IconTrophy />
       </template>
-      <template #title>oke oke cert</template>
+      <template #title>Paragraph example 1</template>
       <SectionCommonBody>
-        <template #header>header</template>
-        <template #title>title</template>
-        <template #datetime>datetime</template>
+        <template #header>Paragraph example 1</template>
+        <template #title>Paragraph example 1</template>
+        <template #datetime>Paragraph example 1</template>
       </SectionCommonBody>
     </SectionCommonBlock>
     <!-- education -->
@@ -35,11 +35,11 @@ import SectionCommonBody from './sections/SectionCommonBody.vue'
       <template #icon>
         <IconEducation />
       </template>
-      <template #title>oke oke oek</template>
+      <template #title>Paragraph example 1</template>
       <SectionCommonBody>
-        <template #header>header</template>
-        <template #title>title</template>
-        <template #datetime>datetime</template>
+        <template #header>Paragraph example 1</template>
+        <template #title>Paragraph example 1</template>
+        <template #datetime>Paragraph example 1</template>
       </SectionCommonBody>
     </SectionCommonBlock>
   </div>

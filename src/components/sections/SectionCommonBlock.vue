@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col gap-8">
+  <div class="flex flex-col gap-4">
     <!-- header -->
     <div class="flex items-center gap-8 text-gray-800">
       <div class="border-1 p-1 rounded-full">
