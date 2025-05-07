@@ -7,20 +7,22 @@ import IconGitHub from './icons/IconGitHub.vue'
 </script>
 
 <template>
-  <div class="flex flex-col gap-2 bg-gray-800 border-1 border-right p-3 rounded-sm">
+  <div
+    class="w-full h-full flex flex-row flex-wrap justify-between md:flex-col gap-4 bg-gray-800 border-1 border-right p-3 rounded-sm"
+  >
     <!--mail-->
     <SectionAddress>
       <template #icon>
         <IconMail />
       </template>
-      <a href="mailto:thaingocphu0803@gmail.com" target="_blank">mail</a>
+      <a href="mailto:thaingocphu0803@gmail.com" target="_blank">Paragraph example 1</a>
     </SectionAddress>
     <!--phone-->
     <SectionAddress>
       <template #icon>
         <IconPhone />
       </template>
-      <a href="tel:+84347079502">phone</a>
+      <a href="tel:+84347079502">Paragraph example 1</a>
     </SectionAddress>
     <!--locate-->
     <SectionAddress>
@@ -31,7 +33,7 @@ import IconGitHub from './icons/IconGitHub.vue'
         href="https://www.google.com/maps/place/Hu%E1%BB%B3nh+T%E1%BA%A5n+Ph%C3%A1t,+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam"
         target="_blank"
       >
-        locate
+        Paragraph example 1
       </a>
     </SectionAddress>
     <!--git-->
@@ -39,7 +41,7 @@ import IconGitHub from './icons/IconGitHub.vue'
       <template #icon>
         <IconGitHub />
       </template>
-      <a href="https://github.com/thaingocphu0803" target="_blank">link</a>
+      <a href="https://github.com/thaingocphu0803" target="_blank"> Paragraph example 1 </a>
     </SectionAddress>
   </div>
 </template>

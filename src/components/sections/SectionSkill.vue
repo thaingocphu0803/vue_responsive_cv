@@ -2,7 +2,14 @@
 import { ref } from 'vue'
 import IconItemSkill from '../icons/IconItemSkill.vue'
 
-const skills = ref(['ok1 ', 'ok2', 'ok3', 'ok4', 'ok5', 'ok6'])
+const skills = ref([
+  'Paragraph example 1',
+  'Paragraph example 1',
+  'Paragraph example 1',
+  'Paragraph example 1',
+  'Paragraph example 1',
+  'Paragraph example 1',
+])
 </script>
 
 <template>

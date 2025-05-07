@@ -9,6 +9,6 @@ import IconPDF from './icons/IconPDF.vue'
     class="btn-fixed flex flex-col items-center justify-center"
   >
     <IconPDF />
-    <span>Download PDF</span>
+    <span class="hidden lg:block">Download</span>
   </button>
 </template>
