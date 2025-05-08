@@ -8,7 +8,10 @@ import DownloadPDF from './components/DownloadPDF.vue'
 
 <template>
   <main class="flex justify-center">
-    <div id="my-cv" class="w-full lg:w-[80vw] xl:w-[60vw] lg:my-8 p-2 flex flex-col gap-4 bg-white">
+    <div
+      id="content-cv"
+      class="w-full lg:w-[80vw] xl:w-[60vw] lg:my-8 p-2 flex flex-col gap-4 bg-white"
+    >
       <!-- Row 1 -->
       <div class="flex flex-col md:flex-row gap-4">
         <div class="md:basis-2/3">
