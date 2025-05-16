@@ -20,6 +20,18 @@
   }
 }
 
+@layer base {
+  html {
+    @apply box-border;
+  }
+
+  *,
+  ::before,
+  ::after {
+    box-sizing: inherit;
+  }
+}
+
 /* ct: custom */
 .ct-icon {
   @apply w-6 h-6;
