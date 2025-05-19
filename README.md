@@ -1,27 +1,25 @@
 # vue_responsive_cv
 
+[live demo](https://thaingocphu0803.github.io/vue_responsive_cv/?ln=vn&id=1)
+
+# Author
+
+Github: [link](https://github.com/thaingocphu0803)
+
+Contact:
+
 ```sh
-live-demo: https://thaingocphu0803.github.io/vue_responsive_cv/?ln=vn&id=1
+thaingocphu0803@gmail.com
 ```
+
+# URL Param
 
 - ln: language (default is en)
 - id: default 1
 
-# Author
-
-```sh
-github: https://github.com/thaingocphu0803
-```
-
-```sh
-contact: thaingocphu0803@gmail.com
-```
-
 # JSON Data
 
-```sh
 ./src/assets/data.json
-```
 
 ## Project Setup
 

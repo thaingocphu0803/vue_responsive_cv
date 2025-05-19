@@ -35,7 +35,7 @@ const props = defineProps({
     </SectionCommonBlock>
 
     <!-- project -->
-    <SectionCommonBlock>
+    <SectionCommonBlock class="break-before">
       <template #icon>
         <IconProject />
       </template>
