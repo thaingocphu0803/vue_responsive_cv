@@ -1,14 +1,27 @@
 # vue_responsive_cv
 
-This template should help get you started developing with Vue 3 in Vite.
+```sh
+live-demo: https://thaingocphu0803.github.io/vue_responsive_cv/?ln=vn&id=1
+```
 
-## Recommended IDE Setup
+- ln: language (default is en)
+- id: default 1
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+# Author
 
-## Customize configuration
+```sh
+github: https://github.com/thaingocphu0803
+```
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+```sh
+contact: thaingocphu0803@gmail.com
+```
+
+# JSON Data
+
+```sh
+./src/assets/data.json
+```
 
 ## Project Setup
 
@@ -28,8 +41,8 @@ npm run dev
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+### compile and Deploy on github
 
 ```sh
-npm run lint
+npm run deploy
 ```
