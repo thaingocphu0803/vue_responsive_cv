@@ -4,6 +4,12 @@ import IconProject from './icons/IconProject.vue'
 import SectionCommonBlock from './sections/SectionCommonBlock.vue'
 import SectionCommonBody from './sections/SectionCommonBody.vue'
 import SectionCommonDesc from './sections/SectionCommonDesc.vue'
+import { defineProps } from 'vue'
+
+const props = defineProps({
+  experience: Object,
+  project: Object,
+})
 </script>
 
 <template>
@@ -13,51 +19,16 @@ import SectionCommonDesc from './sections/SectionCommonDesc.vue'
       <template #icon>
         <IconWork />
       </template>
-      <template #title>Paragraph example 1: about Bali</template>
+      <template #title>{{ props.experience.title }}</template>
       <div class="flex flex-col gap-8">
-        <SectionCommonBody>
-          <template #header>Paragraph example 1: about Bali</template>
-          <template #title>Paragraph example 1: about Bali</template>
-          <template #datetime>Paragraph example 1: about Bali</template>
+        <SectionCommonBody v-for="(exp, index) in props.experience.exps" :key="index">
+          <template #header>{{ exp.title }}</template>
+          <template #title>{{ exp.sub }}</template>
+          <template #datetime>{{ exp.date }}</template>
           <ul class="mt-6">
-            <SectionCommonDesc
-              >Bali is predominantly a Hindu country. Bali is known for its elaborate, traditional
-              dancing. The dancing is inspired by its Hindi beliefs.</SectionCommonDesc
-            >
-            <SectionCommonDesc
-              >Most of the dancing portrays tales of good versus evil.
+            <SectionCommonDesc v-for="(desc, index) in exp.descriptions" :key="index">
+              {{ desc }}
             </SectionCommonDesc>
-            <SectionCommonDesc
-              >To watch the dancing is a breathtaking experience. Lombok has some impressive points
-              of interest – the majestic Gunung Rinjani is an active volcano.</SectionCommonDesc
-            >
-            <SectionCommonDesc
-              >It is the second highest peak in Indonesia. Art is a Balinese passion. Batik
-              paintings and carved statues make popular souvenirs.</SectionCommonDesc
-            >
-          </ul>
-        </SectionCommonBody>
-
-        <SectionCommonBody>
-          <template #header>Paragraph example 1: about Bali</template>
-          <template #title>Paragraph example 1: about Bali</template>
-          <template #datetime>Paragraph example 1: about Bali</template>
-          <ul class="mt-6">
-            <SectionCommonDesc
-              >Bali is predominantly a Hindu country. Bali is known for its elaborate, traditional
-              dancing. The dancing is inspired by its Hindi beliefs.</SectionCommonDesc
-            >
-            <SectionCommonDesc
-              >Most of the dancing portrays tales of good versus evil.
-            </SectionCommonDesc>
-            <SectionCommonDesc
-              >To watch the dancing is a breathtaking experience. Lombok has some impressive points
-              of interest – the majestic Gunung Rinjani is an active volcano.</SectionCommonDesc
-            >
-            <SectionCommonDesc
-              >It is the second highest peak in Indonesia. Art is a Balinese passion. Batik
-              paintings and carved statues make popular souvenirs.</SectionCommonDesc
-            >
           </ul>
         </SectionCommonBody>
       </div>
@@ -68,29 +39,17 @@ import SectionCommonDesc from './sections/SectionCommonDesc.vue'
       <template #icon>
         <IconProject />
       </template>
-      <template #title>Paragraph example 1: about Bali</template>
-      <SectionCommonBody>
-        <template #header>Paragraph example 1: about Bali</template>
-        <template #title>Paragraph example 1: about Bali</template>
-        <template #demo>Paragraph example 1: about Bali</template>
-        <template #github>Paragraph example 1: about Bali</template>
-        <template #datetime>Paragraph example 1: about Bali</template>
+      <template #title>{{ props.project.title }}</template>
+      <SectionCommonBody v-for="(prj, index) in props.project.prjs" :key="index">
+        <template #header>{{ prj.title }}</template>
+        <template #title>{{ prj.sub }}</template>
+        <template #demo>{{ prj.demo.title }}: {{ prj.demo.desc }}</template>
+        <template #github>{{ prj.link.title }}: {{ prj.link.desc }}</template>
+        <template #datetime>{{ prj.date }}</template>
         <ul class="mt-6">
-          <SectionCommonDesc
-            >Bali is predominantly a Hindu country. Bali is known for its elaborate, traditional
-            dancing. The dancing is inspired by its Hindi beliefs.</SectionCommonDesc
-          >
-          <SectionCommonDesc
-            >Most of the dancing portrays tales of good versus evil.
+          <SectionCommonDesc v-for="(desc, index) in prj.descriptions" :key="index">
+            {{ desc }}
           </SectionCommonDesc>
-          <SectionCommonDesc
-            >To watch the dancing is a breathtaking experience. Lombok has some impressive points of
-            interest – the majestic Gunung Rinjani is an active volcano.</SectionCommonDesc
-          >
-          <SectionCommonDesc
-            >It is the second highest peak in Indonesia. Art is a Balinese passion. Batik paintings
-            and carved statues make popular souvenirs.</SectionCommonDesc
-          >
         </ul>
       </SectionCommonBody>
     </SectionCommonBlock>

@@ -5,6 +5,13 @@ import IconTrophy from './icons/IconTrophy.vue'
 import IconEducation from './icons/IconEducation.vue'
 import SectionSkill from './sections/SectionSkill.vue'
 import SectionCommonBody from './sections/SectionCommonBody.vue'
+import { defineProps } from 'vue'
+
+const props = defineProps({
+  skill: Object,
+  education: Object,
+  certificate: Object,
+})
 </script>
 
 <template>
@@ -14,8 +21,8 @@ import SectionCommonBody from './sections/SectionCommonBody.vue'
       <template #icon>
         <IconSkill />
       </template>
-      <template #title>Paragraph example 1</template>
-      <SectionSkill />
+      <template #title>{{ props.skill.title }}</template>
+      <SectionSkill :skills="props.skill.descriptions" />
     </SectionCommonBlock>
 
     <!-- certificate -->
@@ -23,11 +30,11 @@ import SectionCommonBody from './sections/SectionCommonBody.vue'
       <template #icon>
         <IconTrophy />
       </template>
-      <template #title>Paragraph example 1</template>
+      <template #title>{{ props.certificate.title }}</template>
       <SectionCommonBody>
-        <template #header>Paragraph example 1</template>
-        <template #title>Paragraph example 1</template>
-        <template #datetime>Paragraph example 1</template>
+        <template #header>{{ props.certificate.name }}</template>
+        <template #title>{{ props.certificate.sub }}</template>
+        <template #datetime>{{ props.certificate.date }}</template>
       </SectionCommonBody>
     </SectionCommonBlock>
     <!-- education -->
@@ -35,11 +42,11 @@ import SectionCommonBody from './sections/SectionCommonBody.vue'
       <template #icon>
         <IconEducation />
       </template>
-      <template #title>Paragraph example 1</template>
+      <template #title>{{ props.education.title }}</template>
       <SectionCommonBody>
-        <template #header>Paragraph example 1</template>
-        <template #title>Paragraph example 1</template>
-        <template #datetime>Paragraph example 1</template>
+        <template #header>{{ props.education.name }}</template>
+        <template #title>{{ props.education.sub }}</template>
+        <template #datetime>{{ props.education.date }}</template>
       </SectionCommonBody>
     </SectionCommonBlock>
   </div>

@@ -1,0 +1,160 @@
+{
+  "en": {
+    "summary": {
+      "name": "name",
+      "desc": "description"
+    },
+    "address": {
+      "email": "email",
+      "phone": "phone",
+      "location": "location",
+      "github": "github"
+    },
+    "experience": {
+      "title": "exp",
+      "exps": [
+        {
+          "title": "title",
+          "sub": "sub title",
+          "date": "1/2023-1/2024",
+          "descriptions": ["des1", "des2", "des3", "des4"]
+        },
+        {
+          "title": "title2",
+          "sub": "sub title2",
+          "date": "1/2023-1/2025",
+          "descriptions": ["des12", "des22", "des32", "des4"]
+        }
+      ]
+    },
+    "project": {
+      "title": "prj",
+      "prjs": [
+        {
+          "title": "project",
+          "sub": "sub title",
+          "demo": {
+            "title": "demo",
+            "desc": "desc"
+          },
+          "link": {
+            "title": "link",
+            "desc": "desc"
+          },
+          "date": "1/2023-1/2024",
+          "descriptions": ["des1", "des2", "des3", "des4"]
+        },
+        {
+          "title": "project2",
+          "sub": "sub title2",
+          "demo": {
+            "title": "demo2",
+            "desc": "desc2"
+          },
+          "link": {
+            "title": "link2",
+            "desc": "desc2"
+          },
+          "date": "1/2023-1/2025",
+          "descriptions": ["des12", "des22", "des32", "des42"]
+        }
+      ]
+    },
+    "skill": {
+      "title": "sks",
+      "descriptions": ["des1", "des2", "des3", "des4"]
+    },
+    "education": {
+      "title": "edc",
+      "name": "name",
+      "sub": "sub",
+      "date": "1/2023-1/2024"
+    },
+    "certificate": {
+      "title": "ctf",
+      "name": "name",
+      "sub": "sub",
+      "date": "1/2023-1/2024"
+    },
+    "download": "download"
+  },
+  "vn": {
+    "summary": {
+      "name": "tên",
+      "desc": "mô tả"
+    },
+    "address": {
+      "email": "email",
+      "phone": "sdt",
+      "location": "dịa chỉ",
+      "github": "github"
+    },
+    "experience": {
+      "title": "ép",
+      "exps": [
+        {
+          "title": "tiêu đề",
+          "sub": "phụ",
+          "date": "1/2023-1/2024",
+          "descriptions": ["mô tả1", "mô tả2", "mô tả3", "mô tả4"]
+        },
+        {
+          "title": "tiêu đề2",
+          "sub": "phụ2",
+          "date": "1/2023-1/2025",
+          "descriptions": ["mô tả12", "mô tả22", "mô tả32", "mô tả4"]
+        }
+      ]
+    },
+    "project": {
+      "title": "dự",
+      "prjs": [
+        {
+          "title": "án1",
+          "sub": "phụ",
+          "demo": {
+            "title": "demo",
+            "desc": "mô tả"
+          },
+          "link": {
+            "title": "link",
+            "desc": "mô tả"
+          },
+          "date": "1/2023-1/2024",
+          "descriptions": ["mô tả1", "mô tả2", "mô tả3", "mô tả4"]
+        },
+        {
+          "title": "án2",
+          "sub": "phụ2",
+          "demo": {
+            "title": "demo2",
+            "desc": "mô tả2"
+          },
+          "link": {
+            "title": "link2",
+            "desc": "mô tả2"
+          },
+          "date": "1/2023-1/2025",
+          "descriptions": ["mô tả12", "mô tả22", "mô tả32", "mô tả42"]
+        }
+      ]
+    },
+    "skill": {
+      "title": "kĩ năng",
+      "descriptions": ["mô tả1", "mô tả2", "mô tả3", "mô tả4"]
+    },
+    "education": {
+      "title": "trường",
+      "name": "tên",
+      "sub": "phụ",
+      "date": "1/2023-1/2024"
+    },
+    "certificate": {
+      "title": "bằng",
+      "name": "tên",
+      "sub": "phụ",
+      "date": "1/2023-1/2024"
+    },
+    "download": "tải PDF"
+  }
+}

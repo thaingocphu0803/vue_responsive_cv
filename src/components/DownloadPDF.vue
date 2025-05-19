@@ -2,6 +2,11 @@
 import IconPDF from './icons/IconPDF.vue'
 import html2pdf from 'html2pdf.js'
 import { usePositionStore } from '@/stores/getPosition'
+import { defineProps } from 'vue'
+
+const props = defineProps({
+  download: String,
+})
 
 const downloadPDF = (id) => {
   const element = document.getElementById(id)
@@ -27,6 +32,6 @@ const downloadPDF = (id) => {
     class="btn-fixed flex flex-col items-center justify-center"
   >
     <IconPDF />
-    <span class="hidden lg:block">Download</span>
+    <span class="hidden lg:block first-letter:uppercase">{{ props.download }}</span>
   </button>
 </template>

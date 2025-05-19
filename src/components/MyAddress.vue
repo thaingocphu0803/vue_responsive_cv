@@ -4,6 +4,10 @@ import IconMail from './icons/IconMail.vue'
 import IconPhone from './icons/IconPhone.vue'
 import IconLocate from './icons/IconLocate.vue'
 import IconGitHub from './icons/IconGitHub.vue'
+import { defineProps } from 'vue'
+const props = defineProps({
+  address: Object,
+})
 </script>
 
 <template>
@@ -15,14 +19,14 @@ import IconGitHub from './icons/IconGitHub.vue'
       <template #icon>
         <IconMail />
       </template>
-      <a href="mailto:thaingocphu0803@gmail.com" target="_blank">Paragraph example 1</a>
+      <a href="mailto:thaingocphu0803@gmail.com" target="_blank">{{ props.address.email }}</a>
     </SectionAddress>
     <!--phone-->
     <SectionAddress>
       <template #icon>
         <IconPhone />
       </template>
-      <a href="tel:+84347079502">Paragraph example 1</a>
+      <a href="tel:+84347079502">{{ props.address.phone }}</a>
     </SectionAddress>
     <!--locate-->
     <SectionAddress>
@@ -33,7 +37,7 @@ import IconGitHub from './icons/IconGitHub.vue'
         href="https://www.google.com/maps/place/Hu%E1%BB%B3nh+T%E1%BA%A5n+Ph%C3%A1t,+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam"
         target="_blank"
       >
-        Paragraph example 1
+        {{ props.address.location }}
       </a>
     </SectionAddress>
     <!--git-->
@@ -41,7 +45,7 @@ import IconGitHub from './icons/IconGitHub.vue'
       <template #icon>
         <IconGitHub />
       </template>
-      <a href="https://github.com/thaingocphu0803" target="_blank"> Paragraph example 1 </a>
+      <a href="https://github.com/thaingocphu0803" target="_blank"> {{ props.address.github }} </a>
     </SectionAddress>
   </div>
 </template>

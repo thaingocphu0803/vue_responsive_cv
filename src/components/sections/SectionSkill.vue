@@ -1,19 +1,14 @@
 <script setup>
-import { ref } from 'vue'
+import { defineProps } from 'vue'
 import IconItemSkill from '../icons/IconItemSkill.vue'
 
-const skills = ref([
-  'Paragraph example 1',
-  'Paragraph example 1',
-  'Paragraph example 1',
-  'Paragraph example 1',
-  'Paragraph example 1',
-  'Paragraph example 1',
-])
+const props = defineProps({
+  skills: Array,
+})
 </script>
 
 <template>
-  <div v-for="(skill, index) in skills" :key="index" class="flex items-center gap-11 ps-2">
+  <div v-for="(skill, index) in props.skills" :key="index" class="flex items-center gap-11 ps-2">
     <div class="text-amber-600">
       <IconItemSkill />
     </div>
